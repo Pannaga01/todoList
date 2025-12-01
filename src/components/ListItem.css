@@ -1,0 +1,47 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.list-item:hover {
+  background-color: #f5f5f5;
+}
+
+.list-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.highlight-search-text {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #aaa;
+  margin-right: 8px;
+}
